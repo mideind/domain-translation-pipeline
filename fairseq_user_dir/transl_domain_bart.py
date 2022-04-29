@@ -1,7 +1,14 @@
-# Copyright (c) Facebook, Inc. and its affiliates.
+# Copyright (C) Miðeind ehf.
+# This file is part of GreynirSeq <https://github.com/mideind/GreynirSeq>.
+# See the LICENSE file in the root of the project for terms of use.
 #
-# This source code is licensed under the MIT license found in the
-# LICENSE file in the root directory of this source tree.
+# This file is based on a file from fairseq (fairseq/tasks/translation_from_pretrained_bart.py)
+# which has the following license:
+#
+#     Copyright (c) Facebook, Inc. and its affiliates.
+#
+#     This source code is licensed under the MIT license found in the
+#     LICENSE file in the root directory of this source tree.
 
 from typing import List
 
@@ -202,10 +209,6 @@ class MyTask(TranslationFromPretrainedBARTTask):
                 domain_dict=self.domain_dict
         )
         self.datasets[split] = DomainPrefixingDataset(langpair_dataset=self.datasets[split], domain_per_example=domain_per_example, src_dict=self.src_dict, domain_dict=self.domain_dict)
-        # foo = PrependTokenDataset(self.datasets[split], )
-        # print(self.datasets[split][0])
-        # breakpoint()
-        # print()
 
     def build_generator(self, models, args, **unused):
         if getattr(args, "score_reference", False):
