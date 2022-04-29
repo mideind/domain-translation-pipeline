@@ -1,0 +1,47 @@
+name: /data/scratch/haukur/condaenvs/foobar
+channels:
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=4.5=1_gnu
+  - ca-certificates=2022.3.29=h06a4308_0
+  - certifi=2021.10.8=py38h06a4308_2
+  - ld_impl_linux-64=2.35.1=h7274673_9
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=9.3.0=h5101ec6_17
+  - libgomp=9.3.0=h5101ec6_17
+  - libstdcxx-ng=9.3.0=hd4cf53a_17
+  - ncurses=6.3=h7f8727e_2
+  - openssl=1.1.1n=h7f8727e_0
+  - pip=21.2.4=py38h06a4308_0
+  - python=3.8.13=h12debd9_0
+  - readline=8.1.2=h7f8727e_1
+  - sentencepiece=0.1.95=py38hd09550d_0
+  - setuptools=61.2.0=py38h06a4308_0
+  - sqlite=3.38.2=hc218d9a_0
+  - tk=8.6.11=h1ccaba5_0
+  - wheel=0.37.1=pyhd3eb1b0_0
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7f8727e_4
+  - pip:
+    - antlr4-python3-runtime==4.8
+    - cffi==1.15.0
+    - colorama==0.4.4
+    - cython==0.29.28
+    - dataclasses==0.6
+    - fairseq==0.10.2
+    - hydra-core==1.1.2
+    - importlib-resources==5.2.3
+    - numpy==1.22.3
+    - omegaconf==2.1.2
+    - portalocker==2.4.0
+    - pycparser==2.21
+    - pyyaml==6.0
+    - regex==2022.3.15
+    - sacrebleu==2.0.0
+    - tabulate==0.8.9
+    - torch==1.11.0
+    - tqdm==4.64.0
+    - typing-extensions==4.2.0
+    - zipp==3.8.0
+prefix: /data/scratch/haukur/condaenvs/foobar
